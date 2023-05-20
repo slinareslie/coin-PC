@@ -2,7 +2,7 @@
 
 using namespace std;
 
-vector<float> c(3);
+vector<float> c;
 vector<float> ready(100,0);
 vector<float> listo(100,0);
 
@@ -13,7 +13,9 @@ int main(){
     cin>>n;
 
     for(float i=0;i<n ;i++){
-        cin>>c[i];
+        float aux;
+        cin>>aux;
+        c.push_back(aux);
     }
 
     float x;
